@@ -37543,9 +37543,9 @@
     window.lampa_settings = {};
   }
   Arrays.extend(window.lampa_settings, {
-    socket_use: false,
+    socket_use: true,
     socket_url: undefined,
-    socket_methods: false,
+    socket_methods: true,
     account_use: true,
     account_sync: false,
     plugins_use: false,
@@ -37637,41 +37637,41 @@
       Recomends: Recomends,
       VideoQuality: VideoQuality,
       TimeTable: TimeTable,
-      Broadcast: Broadcast,
-      Helper: Helper,
+//      Broadcast: Broadcast,
+//      Helper: Helper,
       InteractionMain: component,
       InteractionCategory: component$i,
       InteractionLine: create$i,
       Status: status$2,
-      Plugins: Plugins,
-      Extensions: Extensions,
-      Tizen: Tizen,
+//      Plugins: Plugins,
+//      Extensions: Extensions,
+//      Tizen: Tizen,
       Layer: Layer,
-      Console: Console,
+//      Console: Console,
       Iframe: Iframe,
       Parser: Parser,
       Manifest: object$2,
       TMDB: TMDB$1,
       Base64: Base64,
       Loading: Loading,
-      YouTube: YouTube,
-      WebOSLauncher: WebOSLauncher,
+//      YouTube: YouTube,
+//      WebOSLauncher: WebOSLauncher,
       Event: Event,
       Search: Search,
       DeviceInput: DeviceInput,
       Worker: AppWorker,
       DB: IndexedDB,
-      NavigationBar: NavigationBar,
+//      NavigationBar: NavigationBar,
       Endless: Endless,
       Color: Color,
       Cache: Cache,
       Torrent: Torrent,
       Torserver: Torserver,
-      Speedtest: Speedtest,
+//      Speedtest: Speedtest,
       Processing: Processing,
-      ParentalControl: ParentalControl,
+//      ParentalControl: ParentalControl,
       VPN: VPN,
-      Bell: Bell
+//      Bell: Bell
     };
   }
 
@@ -37788,33 +37788,33 @@
     Background.init();
     Head.init();
     Notice$1.init();
-    Bell.init();
+//    Bell.init();
     Menu.init();
     Activity$1.init();
     Screensaver$2.init();
     Socket.init();
     Account.init();
-    Extensions.init();
-    Plugins.init();
+//    Extensions.init();
+//    Plugins.init();
     Recomends.init();
     TimeTable.init();
-    Helper.init();
-    Tizen.init();
+//    Helper.init();
+//    Tizen.init();
     Player.init();
     Iframe.init();
     Parser.init();
-    WebOSLauncher.init();
+//    WebOSLauncher.init();
     Theme$2.init();
-    AdManager.init();
-    NavigationBar.init();
-    Demo.init();
-    Speedtest.init();
+//    AdManager.init();
+//    NavigationBar.init();
+//    Demo.init();
+//    Speedtest.init();
     Processing.init();
-    ParentalControl.init();
+//    ParentalControl.init();
     Android.init();
     Sound$1.init();
-    Iptv.init();
-    Logs.init();
+//    Iptv.init();
+//    Logs.init();
 
     //добавляем источники поиска
 
