@@ -3282,6 +3282,7 @@ body.card--no-cover .full-start__background {
   opacity: 0.8;
 }
 .full-start-new__split {
+  font-size: 1em;
   margin: 0.45em;
 }
 @media screen and (max-width: 767px) {
@@ -3338,9 +3339,6 @@ body.card--no-cover .full-start__background {
   .full-start-new__rate-line {
     padding-top: 1.3em;
   }
-}
-.full-start-new__split {
-  font-size: 0.7em;
 }
 .full-start-new__description {
   font-size: 1.2em;
