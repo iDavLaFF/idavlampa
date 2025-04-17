@@ -3281,6 +3281,10 @@ body.card--no-cover .full-start__background {
   margin-top: 4px;
   opacity: 0.8;
 }
+.full-start-new__details .meta-line-2 span:not(:last-child)::after {
+    content: ", ";
+    margin-right: 4px;
+}
 .full-start-new__details > * {
   margin: 0.45em;
 }
