@@ -3281,7 +3281,7 @@ body.card--no-cover .full-start__background {
   margin-top: 4px;
   opacity: 0.8;
 }
-.full-start-new__details > * {
+.full-start-new__split {
   margin: 0.45em;
 }
 @media screen and (max-width: 767px) {
