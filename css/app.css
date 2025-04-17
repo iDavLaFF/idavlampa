@@ -3217,11 +3217,7 @@ body.card--no-cover .full-start__background {
   }
 }
 .full-start-new__title {
-  position: absolute;
-  top: 27em;
-  left: 1.2em;
   font-size: 4em;
-  height: 4em;
   font-weight: 600;
   margin-bottom: 0.2em;
   overflow: hidden;
