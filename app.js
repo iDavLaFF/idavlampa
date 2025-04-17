@@ -21735,13 +21735,6 @@
       var quality = !data.movie.first_air_date ? data.movie.release_quality || data.movie.quality : false;
       var head = [];
       var info = [];
-      if (year) {
-        html.find('.tag--year').removeClass('hide').find('> div').text(year);
-        head.push('<span>' + year + '</span>');
-      }
-      if (countries.length) {
-        head.push(countries.slice(0, 5).join(' | '));
-      }
       if (!data.movie.tagline) {
         html.find('.full--tagline').remove();
       }
@@ -21769,6 +21762,13 @@
       }
       if (data.movie.number_of_seasons) {
         html.find('.is--serial').removeClass('hide');
+      }
+      if (year) {
+        html.find('.tag--year').removeClass('hide').find('> div').text(year);
+        info.push('<span>' + year + '</span>');
+      }
+      if (countries.length) {
+        info.push(countries.slice(0, 5).join(' | '));
       }
 
     (function () {
@@ -21915,7 +21915,6 @@
           last = $(this)[0];
         });
       }
-      html.find('.full-start-new__head').toggleClass('hide', !head.length).html(head.join(', '));
       html.find('.full-start-new__details').html(info.join('<span class="full-start-new__split">●</span>'));
       Storage.listener.follow('change', follow);
       follow({
