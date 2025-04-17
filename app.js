@@ -7871,10 +7871,11 @@
     html$g.find('.open--search').on('hover:enter', Search.open.bind(Search));
     html$g.find('.head__logo').on('click hover:enter', function () {
       Activity$1.push({
-        url: 'main',
+        url: '',
         title: Lang.translate('title_main') + ' - ' + Storage.field('source').toUpperCase(),
         component: 'main',
-        source: Storage.field('source')
+        source: Storage.field('source'),
+        page: 1
       });
     });
     Storage.listener.follow('change', function (e) {
