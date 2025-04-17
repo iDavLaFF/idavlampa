@@ -3276,6 +3276,11 @@ body.card--no-cover .full-start__background {
   min-height: 1.9em;
   font-size: 1.1em;
 }
+.full-start-new__details .meta-line-2 {
+  flex-basis: 100%;
+  margin-top: 4px;
+  opacity: 0.8;
+}
 .full-start-new__details > * {
   margin: 0.45em;
 }

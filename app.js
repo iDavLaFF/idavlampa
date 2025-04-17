@@ -21765,10 +21765,10 @@
       }
       if (year) {
         html.find('.tag--year').removeClass('hide').find('> div').text(year);
-        info.push('<span>' + year + '</span>');
+        info.push('<span class="meta-line-2">' + year + '</span>');
       }
       if (countries.length) {
-        info.push(countries.slice(0, 5).join(' | '));
+        info.push('<span class="meta-line-2">' + countries.slice(0, 5).join(' | ') + '</span>');
       }
 
     (function () {
