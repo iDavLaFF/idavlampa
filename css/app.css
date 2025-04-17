@@ -3280,6 +3280,7 @@ body.card--no-cover .full-start__background {
   flex-basis: 100%;
   margin-top: 4px;
   opacity: 0.8;
+  font-size: 1.1em;
 }
 .full-start-new__split {
   font-size: 1em;
