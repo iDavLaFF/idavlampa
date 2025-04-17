@@ -21919,10 +21919,7 @@
       const secondLineItems = info.filter(item => item.includes('meta-line-2'));
       const firstLineHTML = firstLineItems.join('<span class="full-start-new__split">●</span>');
       const secondLineHTML = secondLineItems.join(', ');
-      html.find('.full-start-new__details').html(`
-        <div class="meta-line-1">${firstLineHTML}</div>
-        ${secondLineItems.length ? `<div class="meta-line-2">${secondLineHTML}</div>` : ''}
-      `);
+      html.find('.full-start-new__details').html(`<div class="meta-line-1">${firstLineHTML}</div>${secondLineItems.length ? `<div class="meta-line-2">${secondLineHTML}</div>` : ''}`);
       Storage.listener.follow('change', follow);
       follow({
         name: 'parser_use'
