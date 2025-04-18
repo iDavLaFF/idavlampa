@@ -49,7 +49,10 @@
         pages_save_total: '3',
         keyboard_type: 'integrate',
         logo_glav: '0',
-        sisi_preview: 'false'
+        sisi_preview: 'false',
+        torrents_filter: JSON.stringify({
+            quality: ['4k', '1080p']
+        })
       };
 
       Object.keys(settings).forEach(key => Lampa.Storage.set(key, settings[key]));
