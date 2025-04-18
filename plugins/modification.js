@@ -24,7 +24,7 @@
         clearInterval(timer);
         if (!Lampa.Storage.get('set', 'false')) startSet();
       }
-    }, 200);
+    }, 1000);
 
     function startSet() {
       const settings = {
