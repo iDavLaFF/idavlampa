@@ -21973,28 +21973,19 @@
       });
     };
     this.setBtnInPriority = function (btn) {
-    const cont = html.find('.full-start-new__buttons');
-    const priorityBtn = cont.find('.button--priority');
-    if (priorityBtn.length && !priorityBtn.is(btn)) {
-        priorityBtn.remove();
-    }
-    if (!btn.hasClass('button--priority')) {
-        btn.addClass('button--priority')
-           .removeClass('view--torrent')
-           .on('hover:enter', () => btn.trigger('hover:enter'))
-           .on('hover:long', () => {
-               btn.remove();
-               Storage.set('full_btn_priority', '');
-               Controller.toggle('full_start', html.find('.button--play')[0]);
-           });
-        cont.prepend(btn);
-      }
+      var cont = html.find('.full-start-new__buttons');
+      var clon = btn.clone();
+      cont.find('.button--priority').remove();
+      clon.addClass('button--priority').removeClass('view--torrent').on('hover:enter', function () {
+        btn.trigger('hover:enter');
+      }).on('hover:long', function () {
+        clon.remove();
+        Storage.set('full_btn_priority', '');
+        last = html.find('.button--play')[0];
+        Controller.toggle('full_start');
+      });
+      cont.prepend(clon);
     };
-    const setDefaultTorrentBtn = () => {
-      const torrentBtn = html.find('.view--torrent').first();
-      if (torrentBtn.length) this.setBtnInPriority(torrentBtn);
-    };
-    setTimeout(setDefaultTorrentBtn, 50);
     this.vote = function (type, add) {
       var mine = Storage.get('mine_reactions', {});
       var id = (data.movie.name ? 'tv' : 'movie') + '_' + data.movie.id;
