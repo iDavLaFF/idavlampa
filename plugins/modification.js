@@ -1,7 +1,7 @@
     // Добавляем плагины
     const plugins = [
 //      'https://plugin.rootu.top/tmdb.js', // @ROOTU thanks. TMDB Proxy v1.1.1
-      'https://cub.rip/plugin/tracks.js', // @CUB tracks plugin
+      'https://cub.rip/plugin/tracks', // @CUB tracks plugin
       'https://idavlaff.github.io/plugins/beautify.js', // @CUB thanks, !'but pay for a big background, seriously?' Combine 'interface' & 'cardify' plugins => 'beautify'. @BYLAMPA thanks, for fix rating issue on card
       'https://idavlaff.github.io/plugins/logo.js', // @ELENATV1 thanks. Movie & TV Show logo add. (#fix) 
 //      'https://lampaplugins.github.io/store/logo.js', // @ELENATV1 thanks. Movie & TV Show logo add.
